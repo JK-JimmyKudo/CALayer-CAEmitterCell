@@ -11,6 +11,9 @@
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 
+
+
+
 @property (nonatomic,strong) UITableView *tableView;
 
 @property (nonatomic,strong) NSArray *dataArray;
@@ -23,10 +26,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-//    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0,self.view.bounds.size.width , self.view.bounds.size.height) style:UITableViewStylePlain];
-//    self.tableView.delegate = self;
-//    self.tableView.dataSource = self;
-//    [self.view addSubview:self.tableView];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0,self.view.bounds.size.width , self.view.bounds.size.height) style:UITableViewStylePlain];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.view addSubview:self.tableView];
 //
 //
     self.dataArray = @[@"案例一：粒子火焰效果",@"案例二：“鬼火”火焰效果",@"案例三：霓虹效果",@"案例四：雪花效果"];
@@ -67,7 +70,7 @@
 
     
     
-    [self FlameEffect];
+//    [self FlameEffect];
     
 
 
@@ -151,7 +154,7 @@
     CAEmitterCell *cell = [CAEmitterCell emitterCell];
     cell.contents = (__bridge id)[UIImage imageNamed:@"fire"].CGImage;
     cell.name = @"fire";//粒子的名字
-    cell.emissionLongitude = 0.5;
+    cell.emissionLongitude = 0.0;
 //    图像的出现频率（每秒钟图片出现的数量）
     cell.birthRate = 80;
     //每个图像的生命周期
@@ -174,6 +177,21 @@
     emitter.emitterCells = @[cell];
  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 - (void)didReceiveMemoryWarning {
