@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C25E3A0B20B4162700AABEDC /* EmitterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C25E3A0A20B4162700AABEDC /* EmitterButton.m */; };
 		C2FF320020B3B3770012ECF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FF31FF20B3B3770012ECF5 /* AppDelegate.m */; };
 		C2FF320320B3B3770012ECF5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FF320220B3B3770012ECF5 /* ViewController.m */; };
 		C2FF320620B3B3770012ECF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2FF320420B3B3770012ECF5 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C25E3A0920B4162600AABEDC /* EmitterButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmitterButton.h; sourceTree = "<group>"; };
+		C25E3A0A20B4162700AABEDC /* EmitterButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmitterButton.m; sourceTree = "<group>"; };
 		C2FF31FB20B3B3770012ECF5 /* CALayer层动画详解.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CALayer层动画详解.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2FF31FE20B3B3770012ECF5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C2FF31FF20B3B3770012ECF5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,6 +65,8 @@
 				C2FF31FF20B3B3770012ECF5 /* AppDelegate.m */,
 				C2FF320120B3B3770012ECF5 /* ViewController.h */,
 				C2FF320220B3B3770012ECF5 /* ViewController.m */,
+				C25E3A0920B4162600AABEDC /* EmitterButton.h */,
+				C25E3A0A20B4162700AABEDC /* EmitterButton.m */,
 				C2FF320420B3B3770012ECF5 /* Main.storyboard */,
 				C2FF320720B3B3790012ECF5 /* Assets.xcassets */,
 				C2FF320920B3B3790012ECF5 /* LaunchScreen.storyboard */,
@@ -141,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C25E3A0B20B4162700AABEDC /* EmitterButton.m in Sources */,
 				C2FF320320B3B3770012ECF5 /* ViewController.m in Sources */,
 				C2FF320E20B3B3790012ECF5 /* main.m in Sources */,
 				C2FF320020B3B3770012ECF5 /* AppDelegate.m in Sources */,

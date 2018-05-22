@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "EmitterButton.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 
@@ -18,6 +18,7 @@
 
 @property (nonatomic,strong) NSArray *dataArray;
 
+@property (nonatomic,strong) UIView *tableViewHeadView;
 
 @end
 
@@ -30,6 +31,22 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
+    
+    
+    self.tableViewHeadView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 50)];
+    
+    self.tableViewHeadView.backgroundColor = [UIColor orangeColor];
+    
+    self.tableView.tableHeaderView = self.tableViewHeadView;
+    
+    
+    EmitterButton *button = [[EmitterButton alloc] initWithFrame:CGRectMake(50, 0, 50, 50)];
+    [self.tableViewHeadView addSubview:button];
+    
+    button.choseClick = ^(EmitterButton *button) {
+        NSLog(@"ddd");
+    };
+    
 //
 //
     self.dataArray = @[@"案例一：粒子火焰效果",@"案例二：“鬼火”火焰效果",@"案例三：霓虹效果",@"案例四：雪花效果"];
